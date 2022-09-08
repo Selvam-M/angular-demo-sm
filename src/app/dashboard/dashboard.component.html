@@ -1,0 +1,11 @@
+<!-- Interpolation | Property and Two-way Binding  -->
+<div class="" *ngIf="showelement">
+<h3>{{name}}</h3>
+
+<input type="text" [ngModel]="enteredName" (ngModelChange)="onNameChange($event)" >
+<h2 >{{displayValue}}</h2>
+</div>
+
+<h1 *ngFor="let number of numbers">{{number}}</h1>
+
+<button type="button" name="button" (click)="onclickshowdiv()">show button</button>
